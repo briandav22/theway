@@ -1,0 +1,25 @@
+.about-main {
+    max-height: 100%;
+    display:flex;
+    flex-direction: row;
+    
+    padding:0;
+    margin:0;
+    
+}
+
+
+.about-img {
+    /* The image used */
+    max-width: 80%;
+    height:auto;
+    align-content: center;
+
+    
+  }
+
+  .about-headline {
+      text-align: center;
+      font-family: 'Alata', sans-serif;
+      padding:2rem
+  }

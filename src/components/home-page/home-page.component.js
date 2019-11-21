@@ -7,6 +7,7 @@ const TravelHome = () => (
         <p>
             A webpage to discuss our travel plans and goals. 
         </p>
+        
     </div>
 )
 

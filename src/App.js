@@ -14,8 +14,6 @@ function App() {
       <HeaderImage />
       <Header/>
       <div className="padme">
-        
-
         <Switch >
           <Route path="/" component={TravelHome} exact={true} />
           <Route path="/fourtyeight" component={TheFourtyEight} exact={true} />
