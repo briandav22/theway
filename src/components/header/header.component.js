@@ -26,7 +26,7 @@ const Header = ()=>(
       </NavDropdown>
       <NavDropdown title="The 48" id="basic-nav-dropdown">
         <NavDropdown.Item as={Link} to="/fourtyeight">About the 48</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Search Mountain</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="/search">Search Mountain</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Our Progress</NavDropdown.Item>
 
       </NavDropdown>

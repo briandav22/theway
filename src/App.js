@@ -5,6 +5,7 @@ import HeaderImage from './components/header-image/header-image.component'
 import TravelHome from './components/home-page/home-page.component'
 import TheFourtyEight from './components/the-fourty-eight/the-foutry-eight.component'
 import AboutUs from './components/about-us/about-us.component'
+import SearchMountain from './components/search-mountain/search-mountain.component'
 
 import './App.css';
 
@@ -18,6 +19,8 @@ function App() {
           <Route path="/" component={TravelHome} exact={true} />
           <Route path="/fourtyeight" component={TheFourtyEight} exact={true} />
           <Route path="/about" component={AboutUs} exact={true} />
+          <Route path="/search" component={SearchMountain} exact={true} />
+          
         </Switch>
       </div>
       
