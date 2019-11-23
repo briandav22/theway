@@ -7,26 +7,22 @@ import TheFourtyEight from './components/the-fourty-eight/the-foutry-eight.compo
 import AboutUs from './components/about-us/about-us.component'
 import SearchMountain from './components/search-mountain/search-mountain.component'
 import Vacation from './components/vacations/vacation-component'
+import ExpandedMountain from './components/mountain-expanded/mountain-expanded.component'
 
 import './App.css';
 
-function usePageViews() {
-  let location = useLocation();
-  React.useEffect(() => {
-    return(["pageview", location.pathname]);
-  }, [location]);
-}
 
 
 function App() {
  
   return (
     <div >
-      <HeaderImage pageView = {usePageViews}/>
+      <HeaderImage/>
       <Header/>
       <div className="padme">
         <Switch >
           <Route path="/" component={TravelHome} exact={true} />
+          <Route path="/expandedMountain" component={ExpandedMountain} exact={true} />
           <Route path="/fourtyeight" component={TheFourtyEight} exact={true} />
           <Route path="/about" component={AboutUs} exact={true} />
           <Route path="/search" component={SearchMountain} exact={true} />

@@ -3,7 +3,6 @@ import MountainCard from '../mountain-card/mountain-card.component';
 import SearchBox from '../search-box/search-box.component'
 import mountain from '../../assets/mountains'
 import CardDeck from 'react-bootstrap/CardDeck'
-import CardGroup from 'react-bootstrap/CardGroup'
 
 class SearchMountain extends React.Component {
     constructor() {
@@ -30,8 +29,8 @@ class SearchMountain extends React.Component {
         const {searchElevation, searchName} = this.state
         const filteredMountains = this.state.searchElevation ? 
         
-        mountain.filter((mountain)=>( parseInt(mountain.Elevation) >=   searchElevation )) :
-        mountain.filter((mountain)=>(mountain.Mountain.toLowerCase().includes(searchName.toLowerCase())))
+        mountain.filter((mountain)=>( parseInt(mountain.elevation) <=   searchElevation )) :
+        mountain.filter((mountain)=>(mountain.mountain.toLowerCase().includes(searchName.toLowerCase()))).slice(0, 5)
 
  
         return (
@@ -40,7 +39,7 @@ class SearchMountain extends React.Component {
                 key="123"
                 />
                 <CardDeck>
-                {filteredMountains.map((mountain)=>{return <div key={mountain.id}><MountainCard mountain={mountain.Mountain} image={mountain.imageUrl} /></div> })}
+                {filteredMountains.map((mountain)=>{return <div key={mountain.id}><MountainCard  {...mountain}/></div> })}
                 </CardDeck>
             </div>
         )

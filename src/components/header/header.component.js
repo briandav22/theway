@@ -3,10 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import './header.styles.scss'
 import { Link } from 'react-router-dom'
 
 const Header = () => (
-  <div>
+  <div className="header-padding">
     <Navbar bg="light" expand="lg">
       <Navbar.Brand as={Link} to="/">Home</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
