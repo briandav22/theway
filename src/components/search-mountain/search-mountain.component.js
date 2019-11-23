@@ -9,17 +9,38 @@ class SearchMountain extends React.Component {
     constructor() {
         super()
         this.state = {
-
+            'searchElevation':'',
+            'searchName':''
         }
+
+
 
     }
 
+    handleChange = (e) => {
+        
+        parseInt(e[0]) > 0 ? this.setState({ searchElevation:e, 'searchName':'' }) : this.setState({ searchName:e, 'searchElevation':''}) 
+        
+      }
+
+
+
     render() {
+        
+        const {searchElevation, searchName} = this.state
+        const filteredMountains = this.state.searchElevation ? 
+        
+        mountain.filter((mountain)=>( parseInt(mountain.Elevation) >=   searchElevation )) :
+        mountain.filter((mountain)=>(mountain.Mountain.toLowerCase().includes(searchName.toLowerCase())))
+
+ 
         return (
             <div>
-                <SearchBox />
+                <SearchBox handleChange={this.handleChange}
+                key="123"
+                />
                 <CardDeck>
-                {mountain.map((mountain)=>{return <div><MountainCard mountain={mountain.Mountain} image={mountain.imageUrl} key={mountain.id }/></div> })}
+                {filteredMountains.map((mountain)=>{return <div key={mountain.id}><MountainCard mountain={mountain.Mountain} image={mountain.imageUrl} /></div> })}
                 </CardDeck>
             </div>
         )

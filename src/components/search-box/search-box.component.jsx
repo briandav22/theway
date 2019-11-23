@@ -1,17 +1,16 @@
 import React from 'react'
 import SearchField from 'react-search-field';
 
-const SearchBox = () => {
+const SearchBox = (props) => {
+ 
 
-    const onChange = (e) => {
-        console.log(e)
-    }
 
     return (
         <div>
             <SearchField
-                placeholder='Search item'
-                onChange={onChange}
+                placeholder='Mountain or Elevation'
+                onChange={props.handleChange}
+                
             />
 
         </div>)
