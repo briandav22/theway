@@ -1,0 +1,75 @@
+.about-main {
+    max-width: 100%;
+    display:flex;
+    flex-direction: row;
+
+    padding:0;
+    margin:0;
+    position: relative;
+    align-content: center;
+    
+}
+
+.about-text {
+    flex-grow:1
+}
+.about-img {
+    /* The image used */
+
+    
+    max-width: 50%;
+    max-height: auto;
+  
+  
+
+
+
+    
+  }
+
+  .about-headline {
+      text-align: center;
+      font-family: 'Alata', sans-serif;
+      padding:2rem;
+      
+  }
+
+
+  @media (max-width: 1000px) {
+    .about-headline {
+        text-align: center;
+        font-family: 'Alata', sans-serif;
+        padding:1rem;
+        
+    }
+  
+
+    .about-main {
+        max-width: 100%;
+        display:flex;
+        flex-direction: column;
+    
+        padding:0;
+        margin:0;
+        position: relative;
+        align-content: center;
+        
+    }
+
+    .about-img {
+        /* The image used */
+    
+        
+        max-width: auto;
+        max-height: auto;
+        display:block;
+        align-content: center;
+        margin:auto;
+      
+      
+    
+    
+    
+        
+      }
+}

@@ -1,292 +1,339 @@
-const mountains = {
-    "Washington": {
+const mountains = [
+    {
         "Mountain": "Washington",
         "Elevation": "6288",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "https://res.cloudinary.com/dqncfvnsi/image/upload/v1574470438/Washington_fys8i4.jpg",
+        "id":"1"
     },
-    "Adams": {
+     {
         "Mountain": "Adams",
         "Elevation": "5774",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"2"
     },
-    "Jefferson": {
+     {
         "Mountain": "Jefferson",
         "Elevation": "5712",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"3"
     },
-    "Monroe": {
+     {
         "Mountain": "Monroe",
         "Elevation": "5384",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"4"
     },
-    "Madison": {
+    {
         "Mountain": "Madison",
         "Elevation": "5367",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"5"
     },
-    "Lafayette": {
+    {
         "Mountain": "Lafayette",
         "Elevation": "5260",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"6"
     },
-    "Lincoln": {
+     {
         "Mountain": "Lincoln",
         "Elevation": "5089",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"7"
     },
-    "South Twin": {
+     {
         "Mountain": "South Twin",
         "Elevation": "4902",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"8"
     },
-    "Carter Dome": {
+     {
         "Mountain": "Carter Dome",
         "Elevation": "4832",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"9"
     },
-    "Moosilauke": {
+     {
         "Mountain": "Moosilauke",
         "Elevation": "4802",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"10"
     },
-    "Eisenhower": {
+    {
         "Mountain": "Eisenhower",
         "Elevation": "4780",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"11"
     },
-    "North Twin": {
+    {
         "Mountain": "North Twin",
         "Elevation": "4761",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"12"
     },
-    "Carrigain": {
+    {
         "Mountain": "Carrigain",
         "Elevation": "4700",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"13"
     },
-    "Bond": {
+     {
         "Mountain": "Bond",
         "Elevation": "4698",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"14"
     },
-    "Middle Carter": {
+    {
         "Mountain": "Middle Carter",
         "Elevation": "4610",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"15"
     },
-    "West Bond": {
+    {
         "Mountain": "West Bond",
         "Elevation": "4540",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"16"
     },
-    "Garfield": {
+     {
         "Mountain": "Garfield",
         "Elevation": "4500",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"17"
     },
-    "Liberty": {
+     {
         "Mountain": "Liberty",
         "Elevation": "4459",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"18"
     },
-    "South Carter": {
+    {
         "Mountain": "South Carter",
         "Elevation": "4430",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"19"
     },
-    "Wildcat, A peak": {
+     {
         "Mountain": "Wildcat, A peak",
         "Elevation": "4422",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"20"
     },
-    "Hancock": {
+   {
         "Mountain": "Hancock",
         "Elevation": "4420",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "https://res.cloudinary.com/dqncfvnsi/image/upload/v1574471739/hancok_north_fjy85t.jpg",
+        "id":"21"
     },
-    "South Kinsman": {
+    {
         "Mountain": "South Kinsman",
         "Elevation": "4358",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"22"
     },
-    "Field": {
+  {
         "Mountain": "Field",
         "Elevation": "4340",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"23"
     },
-    "Osceola": {
+   {
         "Mountain": "Osceola",
         "Elevation": "4340",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "https://res.cloudinary.com/dqncfvnsi/image/upload/v1574471571/osceola_nmd5ej.jpg",
+        "id":"24"
     },
-    "Flume": {
+  {
         "Mountain": "Flume",
         "Elevation": "4328",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"25"
     },
-    "South Hancock": {
+    {
         "Mountain": "South Hancock",
         "Elevation": "4319",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "https://res.cloudinary.com/dqncfvnsi/image/upload/v1574471732/south_hancock_lvvhld.jpg",
+        "id":"26"
     },
-    "Pierce": {
+  {
         "Mountain": "Pierce",
         "Elevation": "4310",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"27"
     },
-    "North Kinsman": {
+   {
         "Mountain": "North Kinsman",
         "Elevation": "4293",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"28"
     },
-    "Willey": {
+   {
         "Mountain": "Willey",
         "Elevation": "4285",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "https://res.cloudinary.com/dqncfvnsi/image/upload/v1574472210/willey_fysttr.jpg",
+        "id":"29"
     },
-    "Bondcliff": {
+    {
         "Mountain": "Bondcliff",
         "Elevation": "4265",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"30"
     },
-    "Zealand": {
+ {
         "Mountain": "Zealand",
         "Elevation": "4260",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "https://res.cloudinary.com/dqncfvnsi/image/upload/v1574470969/zealand_jw5scb.jpg",
+        "id":"31"
     },
-    "North Tripyramid": {
+   {
         "Mountain": "North Tripyramid",
         "Elevation": "4180",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"32"
     },
-    "Cabot": {
+   {
         "Mountain": "Cabot",
         "Elevation": "4170",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"33"
     },
-    "East Osceola": {
+   {
         "Mountain": "East Osceola",
         "Elevation": "4156",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"34"
     },
-    "Middle Tripyramid": {
+ {
         "Mountain": "Middle Tripyramid",
         "Elevation": "4140",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"35"
     },
-    "Cannon": {
+{
         "Mountain": "Cannon",
         "Elevation": "4100",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "https://res.cloudinary.com/dqncfvnsi/image/upload/v1574472113/cannon_fyfeff.jpg",
+        "id":"36"
     },
-    "Hale": {
+ {
         "Mountain": "Hale",
         "Elevation": "4054",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"37"
     },
-    "Jackson": {
+    {
         "Mountain": "Jackson",
         "Elevation": "4052",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "https://res.cloudinary.com/dqncfvnsi/image/upload/v1574471452/jackson_qq5xjz.jpg",
+        "id":"38"
     },
-    "Tom": {
+{
         "Mountain": "Tom",
         "Elevation": "4051",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"39"
     },
-    "Wildcat, D Peak": {
+{
         "Mountain": "Wildcat, D Peak",
         "Elevation": "4050",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"40"
     },
-    "Moriah": {
+     {
         "Mountain": "Moriah",
         "Elevation": "4049",
         "description": "",
-        "quickSummary": ""
-    },
-    "Passaconaway": {
+        "imageUrl": "https://res.cloudinary.com/dqncfvnsi/image/upload/v1574471224/moriah_ahawoi.jpg",
+        "id":"41"
+    }, {
         "Mountain": "Passaconaway",
         "Elevation": "4043",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"42"
     },
-    "Owl's Head": {
+    {
         "Mountain": "Owl's Head",
         "Elevation": "4025",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"43"
     },
-    "Galehead": {
+  {
         "Mountain": "Galehead",
         "Elevation": "4024",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "https://res.cloudinary.com/dqncfvnsi/image/upload/v1574470270/Garfield_fhjgla.jpg",
+        "id":"44"
     },
-    "Whiteface": {
+{
         "Mountain": "Whiteface",
         "Elevation": "4020",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"45"
     },
-    "Waumbek": {
+    {
         "Mountain": "Waumbek",
         "Elevation": "4006",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"46"
     },
-    "Isolation": {
+ {
         "Mountain": "Isolation",
         "Elevation": "4004",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"47"
     },
-    "Tecumseh": {
+ {
         "Mountain": "Tecumseh",
         "Elevation": "4003",
         "description": "",
-        "quickSummary": ""
+        "imageUrl": "",
+        "id":"48"
     }
-}
+]
 
 export default mountains

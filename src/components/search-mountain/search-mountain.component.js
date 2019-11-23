@@ -1,43 +1,30 @@
 import React from 'react'
-import './search-mountain.styles.scss'
-import mountains from '../../assets/mountains'
-import {SearchBox} from '../search-box/search-box.component'
-import Mountain from '../mountain-component/mountain.component'
+import MountainCard from '../mountain-card/mountain-card.component';
+import SearchBox from '../search-box/search-box.component'
+import mountain from '../../assets/mountains'
+import CardDeck from 'react-bootstrap/CardDeck'
+import CardGroup from 'react-bootstrap/CardGroup'
+
 class SearchMountain extends React.Component {
-    constructor(){
+    constructor() {
         super()
-    
-        this.state = {mountains, searchField:'', renderMount:''}
+        this.state = {
+
+        }
 
     }
-
-    handleChange = (e) => {
-        this.setState({ searchField: e.target.value })
-      }
-
-    renderMountain = (mountain) => {
-        this.setState({renderMount:this.state.mountains[mountain]})
-    }
-
 
     render() {
-        const { mountains, searchField } = this.state
-        let mountain = null
-        if(this.state.mountains.hasOwnProperty(searchField)){
-            mountain = searchField
-        } 
-
         return (
-            
-        <div> 
-        <SearchBox
-        placeholder={'Search Mountain'}
-        handleChange={this.handleChange}
-      />
-        
-        <Mountain mountain = {mountain} mountains= {this.state.mountains}/>
-        </div>)
+            <div>
+                <SearchBox />
+                <CardDeck>
+                {mountain.map((mountain)=>{return <div><MountainCard mountain={mountain.Mountain} image={mountain.imageUrl} key={mountain.id }/></div> })}
+                </CardDeck>
+            </div>
+        )
     }
+
 }
 
 export default SearchMountain
